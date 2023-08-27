@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(111, 122, 122);
+}
+fieldset {
+  margin-top: 50px;
+  background-color: rgb(189, 189, 200);
+  width: fit-content;
+  height: fit-content;
+}
+fieldset > legend {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 1px;
+}
+#contact {
+  color: red;
+  padding: 10px;
+
+  display: grid;
+  grid-template-areas:
+    'personal-info'
+    'message';
+}
+#contact .personal-info {
+  grid-area: personal-info;
+}
+#contact .message {
+  grid-area: message;
+  margin-top: 20px;
+}
+.input-width {
+  width: 250px;
+  height: 20px;
+}
+button {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit {
+  width: 100px;
+  height: 20px;
+}
+.subject {
+  width: 420px;
+}
